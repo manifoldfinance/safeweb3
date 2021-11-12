@@ -6,6 +6,7 @@
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.11",
     "lerna": "^3.15.0",
+    "prettier": "^2.4.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "tsdx": "^0.14.1",
