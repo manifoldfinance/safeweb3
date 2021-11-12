@@ -62,3 +62,8 @@ secring.*
 
 # pem keys
 *.pem
+
+# bazel
+tests/tmp
+yarn-error.log
+!tests/fixtures/bazel-*
