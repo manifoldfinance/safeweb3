@@ -1,0 +1,33 @@
+/CHANGELOG.md		merge=union
+
+# merge driver custom
+package-lock.json merge=npm-merge-driver
+npm-shrinkwrap.json merge=npm-merge-driver
+
+# image formats
+*.png diff=exif
+*.jpg diff=exif
+*.svg diff=exif
+
+
+/.github            export-ignore
+/.editorconfig      export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+
+
+.repo/*     text eol=lf
+scripts/*   text eol=lf
+
+git-hash        export-subst
+*.sh            text eol=lf
+security.txt    ident
+*_COMMIT        export-subst
+date*.txt       filter=dater
+CODENOTIFY      linguist-language=CODEOWNERS
+
+
+/.yarn/releases/** binary
+/.yarn/plugins/** binary
+
+*.lock lockable
