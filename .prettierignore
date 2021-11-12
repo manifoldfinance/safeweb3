@@ -1,0 +1,15 @@
+*.d.ts
+*.env.
+*.js
+*.min.js
+*.html
+*.svg
+*.json
+*.css
+*.scss
+*.htm
+*.xml
+*.jsonc
+*.cjs*
+*.esm*
+*.umd*

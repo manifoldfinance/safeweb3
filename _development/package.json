@@ -1,0 +1,38 @@
+
+{
+  "name": "library-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "authors": "SEE CONTRIBUTORS",
+  "description": "",
+  "files": ["dist"],
+   "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "main": "./dist/index.js",
+      "module": "./dist/index.js",
+      "import": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "require": "./dist/*.js",
+      "main": "./dist/*.js",
+      "module": "./dist/*.js",
+      "import": "./dist/*.js"
+    }
+  },
+
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js",
+    "typecheck": "tsc --noEmit --target esnext"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {}
+}

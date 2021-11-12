@@ -1,0 +1,12 @@
+.DS_Store
+dist
+dist-ssr
+*.local
+.idea
+coverage
+.vscode
+.yalc
+yalc.lock
+.next
+docs
+*.log
